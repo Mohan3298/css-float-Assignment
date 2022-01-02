@@ -2,216 +2,251 @@
 <html>
 <head>
     
-    <title>Float & Clear Assignment</title>
+    <title>Float & Clear & Pseudo Class and Element & Responsive Assignment</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='stylesheet-A-1.css'>
     
     <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            
-        }
-        body{
-            background-image: url('css-image1/3612737.jpg');
-            background-size: cover;
-            height: 100vh;
-        }
-        #ctr1{
-            width: 100%;
-            margin: auto;
-        }
-        ul li{
-            border: 1px solid  grey;
-            border-radius: 5px;
-            background-color: transparent;
-            padding: 10px;
-            margin: 3px;
-            width: 9.666666%;
-            font-size: medium;
-            float: right;
-            color: white;
-            list-style-type: none;
-            text-align: center;
-        }
-        #ctn1{
-            text-align: center;
-            color: white;
-        }
-        #ctr2{
-            clear: right;
-            border-bottom: 1px  solid #D4e1ec;
-            border-top: 1px solid #D4e1ec;
-            border-radius: 13px ;
-            height: 57vh;
-            padding: 15px;
-        }
-        span{
-            font-size: 80px;
-            color: rgb(189, 224, 64);
-        }
-        p{
-            font-size: 40px;
-            color: white;
-            margin: 0;
-        }
-        #video_ctr1{
-            text-align: center;
-            margin: 5px;
-            padding: 10px;
-        }
-        #ctr3{
-            width: 100%;
-            margin: 3px;
-            border-bottom: 1px  solid #D4e1ec;
-            border-top: 1px solid #D4e1ec;
-            border-radius: 13px ;
-        }
+    *{
+         color: whitesmoke;
+         margin: 0;
+         box-sizing: border-box;
+
+     }
+     @font-face{
+        font-family: 'Love Series DemoRegular';
+        src: url(fonts/LoveSeriesDemoRegular.ttf);
+     }
+     body{
+        background-image: url('css-image1/3612737.jpg');
+        background-size: cover;
+        
+     }
+     ul{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding-left: 0%;
+        padding-right: 1%;
+     }
+     ul li{
+        border: 1px solid  #D4e1ec;
+        border-radius: 5px;
+        background-color: transparent;
+        padding: 1%;
+        margin-right: 0.5%;
+        width: auto; 
+        font-size: medium;
+      /*  float: left; */
+        color: whitesmoke;
+        list-style-type: none;
+        text-align: center;
+        
+        
+     }
+     ol li:active{
+         color: violet !important;
+         font: 50px;
+     }
+     ul li:hover{
+        background-color: cyan;
+        color: orangered;
+        font-size: 25px;
+     }
+     #ctr2{
+       /*  clear: left; */
+         padding: 10px;
+         border: 1px solid  #D4e1ec;
+         text-align: center;
+         border-radius: 13px;
+     }
+     span{
+         color: rgb(231, 173, 13);
+         font-size: 80px;
+     }
+     #ctn1::first-letter, #letter_up::first-letter{
+         color: rgb(230, 30, 16);
+         font-size: 80px;
+     }
+     #letter_up::first-line{
+         font-weight: bolder;
+         color: pink;
+     }
+
+     p{
+         font-size: 20px;
+     }
+    /* #container1{
+         width: 85% ;
+         margin: 0% auto;
+     } */
         
     </style>
 </head>
 <body>
+    <div id="container1">
     <div id="ctr1">
-        <ul >
+        <ul>
             <li > Jack Sparrow </li>
-            <li > Will Turner </li>
-            <li > Barbossa </li>
-            <li > Elizabeth </li>
-            <li > Davy Jones </li>
-            <li > Joshame Gibbs </li>
-            <li> Norrington</li>
-            <li> Cutler Beckett</li>
-            <li> Boots Turner</li>
+            <li > Will Turner </li>            
+            <li > Barbossa</li>            
+            <li > Elizabeth</li>            
+            <li > Davy Jones </li>           
+            <li > Joshame Gibb </li>           
+            <li> Norrington</li>            
+            <li> Cutler Beckett </li>            
+            <li> Boots Turner </li>
         </ul>   
     </div>
     <div id="ctr2">
-        <p id="ctn1"><span>J</span>ack <span>S</span>parrow</p>
+        <p id="ctn1">Jack<span>S</span>parrow</p>
         <br>
-        <h1 id="cntr1" >9 Best Pirates Of Carribean Characters</h1>
+        <h1 id="cntr1" style="color: chartreuse;" >9 Best Pirates Of Carribean Characters</h1>
         <br>
         <br>
-        <p style="color: white; font-size: 20px; line-height: 30px; letter-spacing: 2px;">Wondering who the top pirates of the Caribbean characters are? Apparently, characters like Jack Sparrow will always top any list like this, however, from the Curse of the Black Pearl (2003), Dead Man’s Chest (2006), At World’s End (2007), On Stranger Tides (2011), and then Dead Men Tell No Tales (2017), there are also other great characters that have made the Pirates of the Caribbean what it is.</p>
+        <p style="color: white; font-size: 20px; line-height: 30px; letter-spacing: 2px;" id="letter_up">Wondering who the top pirates of the Caribbean characters are? Apparently, characters like Jack Sparrow will always top any list like this, however, from the Curse of the Black Pearl (2003), Dead Man’s Chest (2006), At World’s End (2007), On Stranger Tides (2011), and then Dead Men Tell No Tales (2017), there are also other great characters that have made the Pirates of the Caribbean what it is.</p>
     </div>
     <div id="ctr3">
-        <p id="video_ctr1">
+        <p>
             <br>
            <h1 style="text-align: center; color: rgb(214, 7, 233); ">Captain Jack Sparrow Mashup Tamil Video</h1>
            <br>
            <iframe src="https://www.youtube-nocookie.com/embed/7uInSSfJxbg" title="YouTube video player" width="90%" height="500" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>   
     </div>
-    
     <div id="ctr4">
-        <h1 style="color: red;">Best Pirates of the Caribbean Characters</h1>
+        <h1 style="color: red; " id="Back_To_Top">Best Pirates of the Caribbean Characters</h1>
         <br>
         <ol>
-            <li><a href="#chrt1">Captain Jack Sparrow</li>
+            <li><a href="#chrt1">Captain Jack Sparrow</a></li>
             <br>
-            <li><a href="#chrt2">Hector Barbossa</li>
+            <li><a href="#chrt2">Hector Barbossa</a></li>
             <br>
-            <li><a href="#chrt3">Will Turner</li>
+            <li><a href="#chrt3">Will Turner</a></li>
             <br>
-            <li><a href="#chrt4">Elizabeth Swann</li>
+            <li><a href="#chrt4">Elizabeth Swann</a></li>
             <br>
-            <li><a href="#chrt5">Joshamee Gibbs</li>
+            <li><a href="#chrt5">Joshamee Gibbs</a></li>
             <br>
-            <li><a href="#chrt6">Davy Jones</li>
+            <li><a href="#chrt6">Davy Jones</a></li>
             <br>
-            <li><a href="#chrt7">James Norrington</li>
+            <li><a href="#chrt7">James Norrington</a></li>
             <br>
-            <li><a href="#chrt8">Cutler Beckett</li>
+            <li><a href="#chrt8">Cutler Beckett</a></li>
             <br>
-            <li><a href="#chrt9">Bootstrap Bill Turner</li>
+            <li><a href="#chrt9">Bootstrap Bill Turner</a></li>
             <br>
         </ol>
-        <div class="ctr4_1" >
-            <h2  id="chrt1" style="color: greenyellow;">Captain Jack Sparrow</h2>
+    </div> 
+    <div id="ctr5">   
+        <div class="ctr5_1" >
+            <h2 id="chrt1" style="color: greenyellow; text-align: center;">Captain Jack Sparrow</h2>
             <br>
-            <a href="css-image1/Captain-Jack-Sparrow.jpg" target="_self"><img src="css-image1/Captain-Jack-Sparrow.jpg" alt="JackSparrowPic" vspace="20" width="300"></a>
+            <p><a href="css-image1/Captain-Jack-Sparrow.jpg" target="_self"><img src="css-image1/Captain-Jack-Sparrow.jpg" id="image_fix" alt="JackSparrowPic" vspace="20" width="300" ></a></p>
             <br>
             <br>
-            <p style="font-size: 20px; ">Sparrow should top your list of the best Pirates of the Caribbean characters. Captain Sparrow is the main protagonist portrayed by Johnny Depp. He is among the characters that feature in all the Pirates of the Caribbean films. Sparrow is probably the all-time best actor in pirate movies.  From his moves to the way he talks and does everything else, the captain brings in life and humor- well, it’s Johnny Depp.</p>
+            <p style="font-size: 20px;  ">Sparrow should top your list of the best Pirates of the Caribbean characters. Captain Sparrow is the main protagonist portrayed by Johnny Depp. He is among the characters that feature in all the Pirates of the Caribbean films. Sparrow is probably the all-time best actor in pirate movies.  From his moves to the way he talks and does everything else, the captain brings in life and humor- well, it’s Johnny Depp.</p>
             <br>
-            <p style="font-size: 20px; ">Pirate Lord of the Caribbean Sea, Sparrow is among the Nine Pirate Lords who claimed different territories around the world.  He is also the captain of the Black Pearl. Inasmuch as he is the youngest of the Lords, he has wit, negotiation strength, and much more to keep him ahead.</p>
+            <br>
+            <p style="font-size: 20px;  ">Pirate Lord of the Caribbean Sea, Sparrow is among the Nine Pirate Lords who claimed different territories around the world.  He is also the captain of the Black Pearl. Inasmuch as he is the youngest of the Lords, he has wit, negotiation strength, and much more to keep him ahead.</p>
+            <br>
+            <br>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
         </div>
-        <div class="ctr4_1" >
-            <h2 id="chrt2" style="color: orange;">Hector Barbossa</h2>
+        <div class="ctr5_1" >
+            <h2 id="chrt2" style="color: orange; text-align: center;">Hector Barbossa</h2>
             <br>
-            <a href="css-image1/Hector-Barbossa.jpg" target="_self"><img src="css-image1/Hector-Barbossa.jpg" alt="HectorBarbossaPic" vspace="20" width="300"></a>
+            <p><a href="css-image1/Hector-Barbossa.jpg" target="_self"><img src="css-image1/Hector-Barbossa.jpg" id="image_fix" alt="HectorBarbossaPic" vspace="20" width="300" ></a></p>
             <br>
             <br>
-            <p style="font-size: 20px;">One of the top fantasy villains, this character is portrayed by Australian actor Geoffrey Rush and he is also one of the top Pirates Of The Caribbean characters . His first appearance was when he captained the Black Pearl in Curse of the Black Pearl (2003) after leading a mutiny against Captain Jack Sparrow as an undead pirate. He dies as a result of an injury from a fight with Captain Jack, after stealing from the Chest of Cortez in Isla de Muerta. He is, however, revived by the sea goddess Calypso, Tia Dalma.</p>
+            <p style="font-size: 20px; ">One of the top fantasy villains, this character is portrayed by Australian actor Geoffrey Rush and he is also one of the top Pirates Of The Caribbean characters . His first appearance was when he captained the Black Pearl in Curse of the Black Pearl (2003) after leading a mutiny against Captain Jack Sparrow as an undead pirate. He dies as a result of an injury from a fight with Captain Jack, after stealing from the Chest of Cortez in Isla de Muerta. He is, however, revived by the sea goddess Calypso, Tia Dalma.</p>
             <br>
-            <p style="font-size: 20px;">Just like Sparrow, Barbossa is also a trickster who was his first mate when Sparrow acquired the Black Pearl. He is developed as an evil counterpart of Jack Sparrow.</p>
+            <br>
+            <p style="font-size: 20px; ">Just like Sparrow, Barbossa is also a trickster who was his first mate when Sparrow acquired the Black Pearl. He is developed as an evil counterpart of Jack Sparrow.</p>
+            <br>
+            <br>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
         </div>
-        <div class="ctr4_1">
-            <h2 id="chrt3" style="color: violet;" >Will Turner</h2>
+        <div class="ctr5_1">
+            <h2 id="chrt3" style="color: violet; text-align: center;" >Will Turner</h2>
             <br>
-            <a href="css-image1/Will-Turner-Pirates-7.jpg" target="_self"><img src="css-image1/Will-Turner-Pirates-7.jpg" alt="WillTurner" vspace="20" width="300"></a>
+            <p><a href="css-image1/Will-Turner-Pirates-7.jpg" target="_self"><img src="css-image1/Will-Turner-Pirates-7.jpg" id="image_fix" alt="WillTurner" vspace="20" width="300"></a></p>
             <br>
             <br>
-            <p style="font-size: 20px;">Another key character in the POTC films is Will Turner portrayed by Orlando Bloom. He appears in all five films. And he is an only child to pirate “Bootstrap” Bill Turner and a husband to Elizabeth Swann. Even though he did not meet his father throughout his childhood, he grew up to resemble him in looks and deeds.</p>
+            <p style="font-size: 20px; ">Another key character in the POTC films is Will Turner portrayed by Orlando Bloom. He appears in all five films. And he is an only child to pirate “Bootstrap” Bill Turner and a husband to Elizabeth Swann. Even though he did not meet his father throughout his childhood, he grew up to resemble him in looks and deeds.</p>
             <br>
-            <p style="font-size: 20px;">In At World’s End, he becomes a Psychopomp and so is bound to escort souls lost at sea to the next world. Before he begins his journey, he marries Elizabeth and impregnates her. In Dead Men Tell No Tales, Sparrow recruits Will’s young son, Henry, and   Carina Smyth (secret daughter of Barbossa), as well as Barbossa, to help him get the Trident of Poseidon which helped him break all curses of the sea including the one that ties Will Turner to the Flying Dutchman. Although he breaks the curse, he also resurrects Davy Jones who is now after Elizabeth and Sparrow.</p>
+            <p style="font-size: 20px; ">In At World’s End, he becomes a Psychopomp and so is bound to escort souls lost at sea to the next world. Before he begins his journey, he marries Elizabeth and impregnates her. In Dead Men Tell No Tales, Sparrow recruits Will’s young son, Henry, and   Carina Smyth (secret daughter of Barbossa), as well as Barbossa,</p>
+            <br>
+            <p id="read_button_align"><a href="#">READ MORE</a></p><br>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
         </div>
     </div>
-    <div id="ctr5">
-        <div class="ctr5_1" id="ctr5_2">
-            <h2  id="chrt1" style="color: lightseagreen;">Elizabeth Swann</h2>
+    <div id="ctr6">
+        <div class="ctr6_1" >
+            <h2  id="chrt4" style="color: lightseagreen;">Elizabeth Swann</h2>
             <br>
-            <a href="css-image1/Elizabeth-Swann.jpg" target="_self"><img src="css-image1/Elizabeth-Swann.jpg" alt="ElizabethPic" vspace="20" width="300"></a>
+            <p><a href="css-image1/Elizabeth-Swann.jpg" target="_self"><img src="css-image1/Elizabeth-Swann.jpg" id="image_fix" alt="ElizabethPic" vspace="20" width="300"></a></p>
             <br>
             <br>
             <p style="font-size: 20px;">Elizabeth Swann’s character is portrayed by Keira Knightley, a daughter to Governor Weather by Swann and a wife to Will Turner. She features as the leading lady in the first three films of the series- Curse of the Black Pearl, Dead Man’s Chest, and At World’s End.</p>
             <br>
             <p style="font-size: 20px;">Although she grew up in a different setting entirely, Elizabeth is now also a pirate like her husband. her character is strong-willed, intelligent, and brave. And yes, she also has her dark side.</p>
-        </div>
-        <div class="ctr5_1" id="ctr5_3">
-            <h2  id="chrt1" style="color: rgb(255, 47, 186);">Joshamee Gibbs</h2>
             <br>
-            <a href="css-image1/Joshamee-Gibbs.jpg" target="_self"><img src="css-image1/Joshamee-Gibbs.jpg" alt="JoshameGibbPic" vspace="20" width="300"></a>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
+        </div>
+        <div class="ctr6_1" >
+            <h2  id="chrt5" style="color: rgb(255, 47, 186);">Joshamee Gibbs</h2>
+            <br>
+            <p><a href="css-image1/Joshamee-Gibbs.jpg" target="_self"><img src="css-image1/Joshamee-Gibbs.jpg" id="image_fix" alt="JoshameGibbPic" vspace="20" width="300"></a></p>
             <br>
             <br>
             <p style="font-size: 20px;">This is another character that features in all the five films of POTC and is considered one of the very Pirates Of The Caribbean characters. He is portrayed by Kevin McNelly. He is often superstitious, very cynical, and drinks heavily. Initially, he was a petty officer with the Royal Navy, he joins Captain Jack as the first mate on the Interceptor.</p>
             <br>
             <p style="font-size: 20px;">Joshamee Gibbs once served in Her Majesty’s Royal Navy before later becoming a pirate. He is very loyal to sparrow even though he once served Hector Barbossa whom he was not as loyal to as he has remained to Sparrow. What makes him one of the best pirates of the Caribbean characters is how much tales he has to tell and his kindness.</p>
-        </div>
-        <div class="ctr5_1">
-            <h2  id="chrt1" style="color: rgb(231, 47, 255);">Davy Jones</h2> 
             <br>
-            <a href="css-image1/Davy-Jones-davy-jones-1280x720-1.jpg" target="_self"><img src="css-image1/Davy-Jones-davy-jones-1280x720-1.jpg" alt="JoshameGibbPic" vspace="20" width="300"></a>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
+        </div>
+        <div class="ctr6_1">
+            <h2  id="chrt6" style="color: rgb(231, 47, 255);">Davy Jones</h2> 
+            <br>
+            <p><a href="css-image1/Davy-Jones-davy-jones-1280x720-1.jpg" target="_self"><img src="css-image1/Davy-Jones-davy-jones-1280x720-1.jpg" id="image_fix" alt="JoshameGibbPic" vspace="20" width="300"></a></p>
             <br>
             <br>
             <p style="font-size: 20px;">And then there is the character of Davy Jones which is portrayed by Bill Nighly. He features in the Dead Man’s Chest, At World’s End and Dead Men Tell no Tales. He is the immortal captain of the Flying Dutchman. He was charged by his one true love Calypso the Sea goddess to carry souls of the dead at sea to the next world on his ship.</p>
             <br>
             <p style="font-size: 20px;">His character which is computer generated has been named among the best computer-generated film characters.In Dead Man’s Chest, Sparrow promises him his soul if he helps him raise the Black Pearl from the sea and makes him captain for 13 years. Jones did just that but sparrow makes another deal to give him a thousand souls in exchange for his. In At World’s End, he dies before coming back in Dead Men Tell No Tales and is After Sparrow and Elizabeth.</p>
+            <br>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
         </div>
     </div>
-    <div id="ctr6">
-        <div class="ctr6_1" >
+    <div id="ctr7">
+        <div class="ctr7_1" >
             <h2  id="chrt7" style="color: rgb(47, 255, 175);">James Norrington</h2> 
             <br>
-            <a href="css-image1/James-Norrington.jpg" target="_self"><img src="css-image1/James-Norrington.jpg" alt="JamesNorringtonPic" vspace="20" width="300"></a>
+            <p><a href="css-image1/James-Norrington.jpg" target="_self"><img src="css-image1/James-Norrington.jpg" id="image_fix" alt="JamesNorringtonPic" vspace="20" width="300"></a></p>
             <br>
             <br>
             <p style="font-size: 20px;">One of the interesting Pirates Of The Caribbean Characters, James Norrington is portrayed by Jack Davenport. He features in Curse of the Black Pearl, Dead Man’s Chest and At World’s End. He served as a lieutenant in the British Royal Navy. He was aboard the HMS Dauntless as it crosses from England to Port Royal carrying Governor Weatherby Swann and his daughter Elizabeth Swann.</p>
             <br>
             <p style="font-size: 20px;">Originally, this character was not designed to last more than the first film, but he has earned his place again and again.  Also, he was designed as an evil character at first to work with Hector Barbossa before the idea was later dropped.</p>
+            <br>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
         </div>
-        <div class="ctr6_1" >
+        <div class="ctr7_1" >
             <h2  id="chrt8" style="color: rgb(131, 207, 163);">Cutler Beckett</h2> 
             <br>
-            <a href="css-image1/Cutler-Beckett.jpg" target="_self"><img src="css-image1/Cutler-Beckett.jpg" alt="CutlerBecklettPic" vspace="20" width="300"></a>
+            <p><a href="css-image1/Cutler-Beckett.jpg" target="_self"><img src="css-image1/Cutler-Beckett.jpg" id="image_fix" alt="CutlerBecklettPic" vspace="20" width="300"></a></p>
             <br>
             <br>
             <p style="font-size: 20px;">This character is portrayed by Tom Hollander. He features in Dead Man’s Chest and At World’s End. He is very ruthless and he is also the Chairman of the East India Trading Company as well as a representative of King George ll of Great Britain. Within these two films, his mission is to possess Davy Jones’ heart and secondly to eliminate piracy at the seas.</p>
-            
+            <br>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>   
         </div>
-        <div class="ctr6_1" >
+        <div class="ctr7_1" >
             <h2  id="chrt9" style="color: khaki;">Bootstrap Bill Turner</h2> 
             <br>
-            <a href="css-image1/Bootstrap-Bill-Turner.jpg" target="_self"><img src="css-image1/Bootstrap-Bill-Turner.jpg" alt="BootstrapBillTurnerPic" vspace="20" width="300"></a>
+            <p><a href="css-image1/Bootstrap-Bill-Turner.jpg" target="_self"><img src="css-image1/Bootstrap-Bill-Turner.jpg" id="image_fix" alt="BootstrapBillTurnerPic" vspace="20" width="300"></a></p>
             <br>
             <br>
             <p style="font-size: 20px;">This character is portrayed by Stellan Skarsgard. He is a crew member of Davy Jones’ Flying Dutchman and a father to Will Turner. His name is mentioned first in Curse of the Black Pearl and he features in Dead Man’s Chest and At World’s End.</p>
@@ -219,46 +254,49 @@
             <p style="font-size: 20px;">He may not necessarily be your most favorite of the pirate of the Caribbean Characters, but he is definitely among the best.  Davy Jones rescues Bootstrap from the curse that was on him in Dead Man’s Chest and in exchange, he was to work for him on his Flying Dutchman ship for a hundred years. The longer he stayed on the ship, the more his human form is lost like everyone else.              Bootstrap later frees his son that that means he has condemned himself to remain with Jones forever. Even after Jones is later killed, he decided to remain on Dutchman for abandoning Will when he was a child.</p>
             <br>
             <p style="font-size: 20px;">We look forward to seeing these characters feature again in subsequent Pirates of the Caribbean films simply because they the best.</p>
+            <br>
+            <p><a href="#Back_To_Top">Back_To_Top</a></p>
         </div>
     </div>
     <br>
     <br>
-    <div id="ctr7">
+    <div id="ctr8">
         <h1 style="color: chocolate;">Pirates Of The Carribean Film Series Short Story content</h1>
         <br>
-        <div class="ctr7_1">
+        <div class="ctr8_1">
             <h2 style="color: red;">Pirates of the Caribbean: The Curse of the Black Pearl (2003)</h2>
             <br>
             <p style="font-size: 20px;">Blacksmith Will Turner teams up with eccentric pirate Captain Jack Sparrow to save Turner's love, Elizabeth Swann, from cursed pirates led by Jack's mutinous former first mate, Hector Barbossa. Jack wants revenge against Barbossa, who left him stranded on an island before stealing his ship, the Black Pearl, along with 882 pieces of cursed Aztec Gold.</p>
         </div>
-        <div class="ctr7_1">
+        <div class="ctr8_1">
             <h2 style="color: green">Pirates of the Caribbean: Dead Man's Chest (2006)</h2>
             <br>
             <p style="font-size: 20px;">Lord Cutler Beckett of the East India Trading Company arrests Will and Elizabeth for aiding Captain Jack Sparrow in the previous film. Beckett offers clemency if Will agrees to search for Jack's compass in a bid to find the Dead Man's Chest—and inside, the heart of villainous Davy Jones—which would give Beckett control of the seas. However, Jack wants the Chest to escape from an unpaid debt with Jones, who made Jack captain of the Black Pearl for 13 years in exchange for 100 years of service aboard Jones' ship, the Flying Dutchman. Sparrow's debt is complicated by both Will Turner and Elizabeth Swann, who follow him out to sea.</p>
         </div>
-        <div class="ctr7_1">
+        <div class="ctr8_1">
             <h2 style="color: yellow;">Pirates of the Caribbean: At World's End (2007)</h2>
             <br>
             <p style="font-size: 20px;">Lord Beckett gains power over Davy Jones and, with the help of the Flying Dutchman, he is now executing his plans to extinguish piracy forever. To stand against the East India Trading Co., Will, Elizabeth, Barbossa, and the crew of the Black Pearl set out to rescue Captain Jack Sparrow from Davy Jones' Locker. As one of the Nine Pirate Lords, Jack is needed in order to release an ancient goddess with the power to defeat Beckett's forces.</p>
         </div>
-        <div class="ctr7_1">
+        <div class="ctr8_1">
             <h2 style="color: pink;">Pirates of the Caribbean: On Stranger Tides (2011)</h2>
             <br>
             <p style="font-size: 20px;">Captain Jack Sparrow is on a quest to find the fabled Fountain of Youth and crosses paths with a former lover, Angelica. She forces Jack aboard the Queen Anne's Revenge, a ship captained by the infamous pirate Blackbeard, Angelica's father. Both are also in search of the Fountain: Angelica to save her father's soul, Blackbeard to escape a prophecy of his demise at the hands of a one-legged man. Joining the hunt is former pirate captain Barbossa, now a privateer in King George II's Navy, who is in a race against the Spanish for the Fountain of Youth.</p>
         </div>
-        <div class="ctr7_1">
+        <div class="ctr8_1">
             <h2 style="color: orangered;">Pirates of the Caribbean: Dead Men Tell No Tales (2017)</h2>
             <br>
             <p style="font-size: 20px;">A group of ghostly Spanish Royal Navy soldiers led by Jack Sparrow's old nemesis, Captain Armando Salazar, escape from the Devil's Triangle, with the goal of killing every pirate at sea, including Sparrow. To survive, Sparrow seeks out the legendary Trident of Poseidon, a powerful artifact whose owner can control the seas, tides, and aquatic animals, and break curses.[2] The film was released in many countries as Pirates of the Caribbean: Salazar's Revenge</p>
         </div>
     </div>
-    <div id="ctr8">
-        <p style="font-size: 20px ; text-align: center;"> Design By Chii~Mohan@copyright2021.
+    <div id="ctr9">
+        <p style="font-size: 20px ; text-align: center;"> Design By Chili~Mohan@copyright2021.
             <img src="css-image/icons8-facebook-f-50.png" alt="facebook pic" width="20" >&nbsp;
             <img src="css-image/icons8-google-50.png" alt="google pic" width="20" >&nbsp;
             <img src="css-image/icons8-twitter-50.png" alt="twitter pic" width="20" >&nbsp;
             <img src="css-image/icons8-whatsapp-50.png" alt="whatsapp pic" width="20" >&nbsp;
         </p>
+    </div>
     </div>
 </body>
 </html>
