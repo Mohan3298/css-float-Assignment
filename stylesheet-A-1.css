@@ -11,15 +11,15 @@
     /*border-bottom: 1px solid  #D4e1ec; */
     border-radius: 13px;
     width: 100%;
-    padding: 5px;
-    margin: 5px;
+  /*  padding: 1%;
+    margin: 1%; */
     text-align: center;
 }
 #ctr4{
     border-top: 1px solid  #D4e1ec;
     border-radius: 13px;
-    padding: 10px;
-    margin: 5px;
+  /*  padding: 2%;
+    margin: 1.2%; */
     width: 100%;
    /* height: auto; */
 }
@@ -28,15 +28,15 @@
     grid-template-columns: 32% 32% 32%;
     justify-content: center;
     border-radius: 13px;
-    padding: 10px;
-    margin: 5px;
+  /*  padding: 2%;
+    margin: 1%; */
     width: 100%;
   /*  height: auto; */
 }
 .ctr5_1{
   /*  width: 31.333333%; */
-    padding: 10px;
-    margin: 3px;
+    padding: 2%;
+    margin: 1%;
   /*  float: left; */
     background-color: transparent;
     border-radius: 13px ;
@@ -51,7 +51,7 @@ a{
     border: 1px solid #D4e1ec;
     border-radius: 10px;
     margin: auto;
-    padding: 3px;
+    padding: 1%;
     width: 40%;
     text-align: center;
 }
@@ -60,16 +60,16 @@ a{
     grid-template-columns: 32% 32% 32%;
     justify-content: center;
     border-radius: 13px;
-    padding: 10px;
-    margin: 5px;
+  /*  padding: 2%;
+    margin: 1%; */
     width: 100%;
   /*  height: auto;
     clear: both; */
 }
 .ctr6_1{
   /*  width: 31.333333%; */
-    padding: 10px;
-    margin: 3px;
+    padding: 2%;
+    margin: 1%;
   /*  float: left; */
     background-color: transparent;
     border-radius: 13px ;
@@ -80,16 +80,16 @@ a{
     grid-template-columns: 32% 32% 32%;
     justify-content: center;
     border-radius: 13px;
-    padding: 10px;
-    margin: 5px;
-  /*  width: 100%;
-    height: auto;
+  /*  padding: 2%;
+    margin: 1.2%; */
+    width: 100%;
+  /*  height: auto;
     clear: both; */
 }
 .ctr7_1{
   /*  width: 31.333333%; */
-    padding: 10px;
-    margin: 3px;
+    padding: 2%;
+    margin: 1%;
   /*  float: left; */
     background-color: transparent;
     border-radius: 13px ;
@@ -98,16 +98,16 @@ a{
 #ctr8{
     display: flex;
     flex-flow: column nowrap;
-    padding: 10px;
-    margin: 5px;
- /*   width: 100%;
-    height: auto;
+  /*  padding: 2%;
+    margin: 1.2%; */
+    width: 100%;
+  /*  height: auto;
     clear: both; */
 }
 .ctr8_1{
   /*  width: 18%; */
-    padding: 10px;
-    margin: 3px;
+    padding: 2%;
+    margin: 1%;
    /* float: left; */
     background-color: transparent;
     border-radius: 13px ;
@@ -115,13 +115,13 @@ a{
 }
 #ctr9{
    /* clear: both; */
-    padding: 10px;
+    padding: 2%;
   /*  margin: 10px; */
     width: 100%;
     border-bottom: 1px solid #D4e1ec;
     border-radius: 13px;
 }
-@media only screen and ( min-width:300px ) and ( max-width: 992px){
+@media only screen and ( min-width:300px ) and ( max-width: 768px){
     html{
         font-size: 65%;
     }
